@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://et860525.github.io/sitemap.xml
