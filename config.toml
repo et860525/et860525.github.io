@@ -88,9 +88,9 @@ url = "index.xml"
 
 [params.assets]
 disableHLJS = true
-favicon = "/img/favicon.ico"
-favicon16x16 = "/img/favicon-16x16.png"
-favicon32x32 = "/img/favicon-32x32.png"
+favicon = "/images/favicon/favicon.ico"
+favicon16x16 = "/images/favicon/favicon-16x16.png"
+favicon32x32 = "/images/favicon/favicon-32x32.png"
 
 [markup.highlight]
 codeFences = true
