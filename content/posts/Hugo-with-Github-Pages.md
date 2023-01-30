@@ -1,6 +1,6 @@
 ---
 title: "將 Hugo 產生的靜態網站部屬在 GitHub Pages"
-date: 2022-01-11
+date: 2023-01-11
 draft: false
 author: "Chen Yu Fan"
 tags: ["Hugo", "Github"]
@@ -8,7 +8,7 @@ tags: ["Hugo", "Github"]
 
 在初期建立部落格時，本來是想租一台虛擬主機，再把寫好的網頁丟上去，不過最後還是選擇使用 [GitHub Pages](https://pages.github.com/)。
 
-Jekyll 是 Github 建議的靜態網站產生器，不過在查詢資料時發現由 Go 所建構的 [Hugo](https://gohugo.io/)，點進去網頁就說自己是「世界上最快的網站架設框架」，那不試試看怎麼行。
+Jekyll 是 Github 建議的靜態網站產生器，不過在查詢資料時發現由 Go 所建構的 [Hugo](https://gohugo.io/)，點進去網頁上面就寫著自己是「世界上最快的網站架設框架」，那不試試看怎麼行。
 
 <!--more-->
 
@@ -18,13 +18,13 @@ Jekyll 是 Github 建議的靜態網站產生器，不過在查詢資料時發�
 
 下載的方式是根據自己的作業系統來選擇，而我使用的是 Linux，其他的作業系統可以參考 [Hugo Installation](https://gohugo.io/installation/)。
 
-對於 Linux，最簡單的方式就是直接使用 Package managers 下載：
+對於 Linux 系統，最簡單的方式就是直接使用 Package managers 下載：
 
 ```bash
 sudo apt install hugo
 ```
 
-但是這個方法通常下載的都不是最新的版本，所以 Hugo 還提供 Prebuilt binaries 的方式，下載前先確定版本 (使用當下是 `v0.109.0`)：
+但是用這個方式下載的通常都不是最新版本，所以 Hugo 還提供 Prebuilt binaries 的方式，下載前要先確定版本 (使用當下是 `v0.109.0`)：
 
 ```bash
 cd /tmp && mkdir hugo-binary && cd hugo-binary
@@ -38,7 +38,7 @@ hugo version
 
 ## 初始化網站
 
-使用以下指令來建立專案的目錄：
+使用以下得指令來建立專案的目錄：
 
 ```bash
 hugo new site my_blog
@@ -65,9 +65,9 @@ git submodule update --init --recursive # needed when you reclone your repo (sub
 theme = "PaperMod"
 ```
 
-通常下載的主題裡面都會有 `exampleSite` 或是將它獨立出來，通常都能在該主題的 Github 找到。`exampleSite` 都有設定好的 `config.toml`，可以根據自己的需求來設定。
+通常下載的主題裡面都會有 `exampleSite` 或是將它獨立出來，都能在該主題的 Github 找到。`exampleSite` 裡都會有已經設定好的 `config.toml` 可以直接套用，也可以根據自己的需求來設定。
 
-> 可以先將 `exampleSite` 的 `content` 裡的檔案都放進專案的 `content` 裡，這就是預設的文章，可以在運行網站時先預覽顯示的狀態
+> 可以將 `exampleSite` 的 `content` 裡的檔案都放進專案的 `content` 裡，這就是預設的文章，可以在運行網站時先預覽顯示的狀態
 
 ### 運行網站
 
@@ -133,7 +133,7 @@ git push -u origin master
 
 到該 repo 的 Actions 就會看到以下畫面：
 
-![github-actions-build.png](/images/Hugo-with-Github-Pages/github-actions-build.png)
+![[github-actions-build.png]]
 
 > 如果有出現錯誤，請到 Repo -> Settings -> Actions -> General 確認
 > - Actions permissions 設定為 Allow all actions and reusable workflows
@@ -141,6 +141,6 @@ git push -u origin master
 
 Actions 完成編譯後，設定 Github Pages 要使用的 branch：
 
-![github-pages-branch-select.png](/images/Hugo-with-Github-Pages/github-pages-branch-select.png)
+![[github-pages-branch-select.png]]
 
 最後再到 `https://<your-account>.github.io/` 就能看到設定的頁面了。
