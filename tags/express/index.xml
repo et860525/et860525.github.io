@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Express on Mango Blog</title><link>https://et860525.github.io/tags/express/</link><description>Recent content in Express on Mango Blog</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 04 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://et860525.github.io/tags/express/index.xml" rel="self" type="application/rss+xml"/><item><title>TypeScript: 初始化 Express 專案</title><link>https://et860525.github.io/posts/typescript-express-initialization/</link><pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate><guid>https://et860525.github.io/posts/typescript-express-initialization/</guid><description>&lt;p>這篇文章會紀錄如何在 &lt;a href="https://expressjs.com/">Express&lt;/a> 專案裡設定 &lt;a href="https://www.typescriptlang.org/">TypeScript&lt;/a>。&lt;/p>
+&lt;p>先決條件：&lt;/p>
+&lt;ul>
+&lt;li>安裝 &lt;a href="https://nodejs.org/en/">Node.js&lt;/a> ( LTS ) 在你的開發環境上&lt;/li>
+&lt;li>基本的 &lt;code>Node.js&lt;/code> 、 &lt;code>Express&lt;/code> 與 &lt;code>TypeScript&lt;/code> 知識&lt;/li>
+&lt;/ul></description></item></channel></rss>
