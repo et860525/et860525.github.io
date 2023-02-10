@@ -393,7 +393,7 @@ fn main() {
 }
 ```
 
-### 迷途引用 ( Dangling pointer )
+### 迷途引用 ( Dangling references )
 
 有指標的程式語言，就會不小心產生 **迷途指標 ( dangling pointer )**。當資源已經被釋放但指標卻還留著，這樣的指標指向的地方很可能就已經被別人所有了。在 Rust 中編譯器會保證引用絕不會是迷途引用。
 
