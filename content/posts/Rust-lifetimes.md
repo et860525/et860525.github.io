@@ -1,5 +1,5 @@
 ---
-title: "Rust: 生命週期( lifetimes )"
+title: "Rust: 生命週期( Lifetimes )"
 date: 2023-02-10
 draft: false
 author: "Chen Yu Fan"
