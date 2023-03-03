@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Mango Blog</title><link>https://et860525.github.io/</link><description>Recent content on Mango Blog</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 26 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://et860525.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Pnpm ( Performant Node Package Manager )</title><link>https://et860525.github.io/posts/pnpm/</link><pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate><guid>https://et860525.github.io/posts/pnpm/</guid><description>&lt;p>&lt;a href="https://pnpm.io/">Pnpm&lt;/a> ( Performant Node Package Manager ) 是一個套件管理器。根據官網表示，可以節省磁碟空間並提升安裝速度。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Mango Blog</title><link>https://et860525.github.io/</link><description>Recent content on Mango Blog</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 03 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://et860525.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Docker: 設定 MongoDB</title><link>https://et860525.github.io/posts/docker-mongodb/</link><pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate><guid>https://et860525.github.io/posts/docker-mongodb/</guid><description>&lt;p>使用 Docker 來建置 MongoDB，可以先到 &lt;a href="https://hub.docker.com/_/mongo">docker mongo&lt;/a> 來選擇版本。&lt;/p>
+&lt;p>MongoDB 會有幾種架構：&lt;/p>
+&lt;ol>
+&lt;li>Standalone
+&lt;ul>
+&lt;li>建立難度 &lt;strong>低&lt;/strong>&lt;/li>
+&lt;li>單一 MongoDB 資料庫&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://www.mongodb.com/docs/manual/replication/">Replica Set&lt;/a>
+&lt;ul>
+&lt;li>建立難度 &lt;strong>中&lt;/strong>&lt;/li>
+&lt;li>資料會有多個副本提供容錯空間&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://www.mongodb.com/docs/manual/sharding/">Sharded Cluster&lt;/a>
+&lt;ul>
+&lt;li>建立難度 &lt;strong>高&lt;/strong>&lt;/li>
+&lt;li>資料放置在不同的 shard，每個 shard 或 config servers 都是 &lt;code>Replica Set&lt;/code>
+&lt;img loading="lazy" src="https://et860525.github.io/images/Docker-mongodb/Docker-sharded-cluster-production-architecture.png" alt="Docker-sharded-cluster-production-architecture.png" />
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol></description></item><item><title>Pnpm ( Performant Node Package Manager )</title><link>https://et860525.github.io/posts/pnpm/</link><pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate><guid>https://et860525.github.io/posts/pnpm/</guid><description>&lt;p>&lt;a href="https://pnpm.io/">Pnpm&lt;/a> ( Performant Node Package Manager ) 是一個套件管理器。根據官網表示，可以節省磁碟空間並提升安裝速度。&lt;/p>
 &lt;blockquote>
 &lt;p>Fast, disk space efficient package manager&lt;/p>
 &lt;/blockquote></description></item><item><title>Rust: 生命週期( Lifetimes )</title><link>https://et860525.github.io/posts/rust-lifetimes/</link><pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate><guid>https://et860525.github.io/posts/rust-lifetimes/</guid><description>&lt;p>&lt;strong>生命週期 ( lifetimes )&lt;/strong> 會確保我們在需要引用的時候，它們都是有效的。&lt;/p>
