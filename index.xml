@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Mango Blog</title><link>https://et860525.github.io/</link><description>Recent content on Mango Blog</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 03 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://et860525.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Docker: 設定 MongoDB</title><link>https://et860525.github.io/posts/docker-mongodb/</link><pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate><guid>https://et860525.github.io/posts/docker-mongodb/</guid><description>&lt;p>使用 Docker 來建置 MongoDB，可以先到 &lt;a href="https://hub.docker.com/_/mongo">docker mongo&lt;/a> 來選擇版本。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Mango Blog</title><link>https://et860525.github.io/</link><description>Recent content on Mango Blog</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 10 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://et860525.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Restaurant Management 專案(一) - 架構與初始化</title><link>https://et860525.github.io/posts/restaurant-management-init/</link><pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate><guid>https://et860525.github.io/posts/restaurant-management-init/</guid><description>&lt;p>這個專案會使用 OOP 的方式來建構，前端部分會以簡單的方式呈現。&lt;/p>
+&lt;p>整個架構會用到的重要套件：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Package&lt;/th>
+&lt;th>Usage&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;a href="https://expressjs.com/">Express&lt;/a>&lt;/td>
+&lt;td>Web 應用框架&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://www.typescriptlang.org/">TypeScript&lt;/a>&lt;/td>
+&lt;td>開發工具&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://www.prisma.io/">Prisma&lt;/a>&lt;/td>
+&lt;td>訪問資料庫&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://www.docker.com/">Docker&lt;/a>&lt;/td>
+&lt;td>應用容器化&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://www.postgresql.org/">PostgreSQL&lt;/a>&lt;/td>
+&lt;td>資料庫&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>此專案的目的是要讓 Express 使用 Prisma 來訪問資料庫，並且使用 Docker 來建立 PostgreSQL 資料庫。&lt;/p>
+&lt;p>Github：&lt;a href="https://github.com/et860525/restaurant-management">et860525/restaurant-management&lt;/a>&lt;/p></description></item><item><title>Docker: 設定 MongoDB</title><link>https://et860525.github.io/posts/docker-mongodb/</link><pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate><guid>https://et860525.github.io/posts/docker-mongodb/</guid><description>&lt;p>使用 Docker 來建置 MongoDB，可以先到 &lt;a href="https://hub.docker.com/_/mongo">docker mongo&lt;/a> 來選擇版本。&lt;/p>
 &lt;p>MongoDB 會有幾種架構：&lt;/p>
 &lt;ol>
 &lt;li>Standalone
