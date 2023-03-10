@@ -149,7 +149,7 @@ export class RestaurantRepository {
 	```
 	只需要將 template 的名字與給 template 使用的資料丟回即可。
 
-### 實際使用
+### 實做
 
 - `src/main/restaurant/restaurant.controller.ts`
 	```ts
