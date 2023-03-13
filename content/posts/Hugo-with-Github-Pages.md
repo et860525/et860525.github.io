@@ -133,7 +133,7 @@ git push -u origin master
 
 到該 repo 的 Actions 就會看到以下畫面：
 
-![[github-actions-build.png]]
+![github-actions-build.png](/images/Hugo-with-Github-Pages/github-actions-build.png)
 
 > 如果有出現錯誤，請到 Repo -> Settings -> Actions -> General 確認
 > - Actions permissions 設定為 Allow all actions and reusable workflows
@@ -141,6 +141,6 @@ git push -u origin master
 
 Actions 完成編譯後，設定 Github Pages 要使用的 branch：
 
-![[github-pages-branch-select.png]]
+![github-pages-branch-select.png](/images/Hugo-with-Github-Pages/github-pages-branch-select.png)
 
 最後再到 `https://<your-account>.github.io/` 就能看到設定的頁面了。
