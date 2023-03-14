@@ -29,7 +29,7 @@ Github：[et860525/restaurant-management](https://github.com/et860525/restaurant
 
 - 一個顧客 (Customer) 可以有多張訂單 (Order)
 - 一張桌子 (Table) 可以有多張訂單 (Order)
-- 訂單 (Order) 與 菜單品項 (MenuItem) 是**多對多 (many-to-many)** 的關係，而這裡使用 Explicit  many-to-many relations，原因是我想將菜單品項的總和與數量放在裡面
+- 訂單 (Order) 與 菜單品項 (MenuItem) 是**多對多 (many-to-many)** 的關係，而這裡使用 Explicit  many-to-many relations，原因是我想將菜單品項的數量放在裡面
 
 以下是 Prisma 的程式碼：
 
@@ -111,7 +111,7 @@ enum Payment {
 }
 ```
 
-首先要注意的是 Order 裡面的 `tag`  欄位，它的作用是將 tag 顯示成 `000001`。 `@default(dbgenerated("lpad(nextval('order_tag_seq')::text, 6, '0')"))`：
+首先要注意的是 Order 裡面的 `tag` 欄位，它的作用是將 tag 顯示成 `000001`。 `@default(dbgenerated("lpad(nextval('order_tag_seq')::text, 6, '0')"))`：
 - [dbgenerated()](https://www.prisma.io/docs/reference/api-reference/prisma-schema-reference#dbgenerated)：表示有些功能沒辦法再 Primsa 使用，但是在資料庫裡可以
 - [lpad(string, length[, fill])](https://www.postgresqltutorial.com/postgresql-string-functions/postgresql-lpad/)：將指定字串的左邊填充指定字串到指定長度
 - [nextval](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-sequences/)：根據 `Sequences` 的 `INCREMENT` 來獲得下一個值
@@ -126,7 +126,7 @@ enum Payment {
 
 ## Repository
 
-如果是使用 Mongoose 的專案，為了滿足[Layered Architecture](https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html) 就要先建立一個 [Repository](https://github.com/et860525/express-project-architecture/tree/main/src/repositories) 來存放與資料庫交互的程式碼，並再由需要資料庫資料的相關程式碼來呼叫，如：[Service](https://github.com/et860525/express-project-architecture/blob/main/src/main/api/todo/todo.service.ts)。但在 Prisma 裡就會比較簡單，這是因為 [Prisma Client](https://www.prisma.io/docs/concepts/components/prisma-client) 本身就是一個 Object 直接使用即可，相關的資料格式可以在 `Service` 檔案裡做調整。
+如果是使用 Mongoose 的專案，為了滿足[Layered Architecture](https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html) 就要先建立一個 [Repository](https://github.com/et860525/express-project-architecture/tree/main/src/repositories) 來存放與資料庫交互的程式碼，再由需要資料庫資料的相關程式碼來呼叫，如：[Service](https://github.com/et860525/express-project-architecture/blob/main/src/main/api/todo/todo.service.ts)。但在 Prisma 裡就會比較簡單，這是因為 [Prisma Client](https://www.prisma.io/docs/concepts/components/prisma-client) 本身就是一個 Object 直接使用即可，相關的資料格式可以在 `Service` 檔案裡做調整。
 
 ### 嘗試寫一個 Repository Base
 
