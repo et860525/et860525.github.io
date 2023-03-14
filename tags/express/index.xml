@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Express on Mango Blog</title><link>https://et860525.github.io/tags/express/</link><description>Recent content in Express on Mango Blog</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 10 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://et860525.github.io/tags/express/index.xml" rel="self" type="application/rss+xml"/><item><title>Restaurant Management 專案(一) - 架構與初始化</title><link>https://et860525.github.io/posts/restaurant-management-init/</link><pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate><guid>https://et860525.github.io/posts/restaurant-management-init/</guid><description>&lt;p>這個專案會使用 OOP 的方式來建構，前端部分會以簡單的方式呈現。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Express on Mango Blog</title><link>https://et860525.github.io/tags/express/</link><description>Recent content in Express on Mango Blog</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://et860525.github.io/tags/express/index.xml" rel="self" type="application/rss+xml"/><item><title>Restaurant Management 專案(二) - 建立 Model 與 Repository</title><link>https://et860525.github.io/posts/restaurant-management-model-repository/</link><pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate><guid>https://et860525.github.io/posts/restaurant-management-model-repository/</guid><description>&lt;p>接下來就要設計 &lt;code>Model&lt;/code> 與建立 &lt;code>Repository&lt;/code> 來跟資料庫進行交互。&lt;/p>
+&lt;p>首先，設計 &lt;code>Model&lt;/code> 的範本是來自 &lt;a href="https://dribbble.com/shots/20762377-Cheseto-Restaurant-POS-App-Full-Preview">Cheseto Restaurant POS App - Full Preview&lt;/a>，此範本包含四個 table：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Table&lt;/strong>：餐廳裡的桌子&lt;/li>
+&lt;li>&lt;strong>MenuItem&lt;/strong>：菜單品項&lt;/li>
+&lt;li>&lt;strong>Order&lt;/strong>：訂單&lt;/li>
+&lt;li>&lt;strong>Customer&lt;/strong>：客人的資訊&lt;/li>
+&lt;/ol>
+&lt;p>完成 &lt;code>Model&lt;/code> 後，先寫出 &lt;code>repository.base&lt;/code> 再套用到各自的 table 上，以上。&lt;/p>
+&lt;p>Github：&lt;a href="https://github.com/et860525/restaurant-management">et860525/restaurant-management&lt;/a>&lt;/p></description></item><item><title>Restaurant Management 專案(一) - 架構與初始化</title><link>https://et860525.github.io/posts/restaurant-management-init/</link><pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate><guid>https://et860525.github.io/posts/restaurant-management-init/</guid><description>&lt;p>這個專案會使用 OOP 的方式來建構，前端部分會以簡單的方式呈現。&lt;/p>
 &lt;p>整個架構會用到的重要套件：&lt;/p>
 &lt;table>
 &lt;thead>
