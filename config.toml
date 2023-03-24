@@ -79,6 +79,14 @@ name = "twitter"
 url = "https://twitter.com/Mango9702"
 
 [[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/yu-fan-chen-6710b0244"
+
+[[params.socialIcons]]
+name = "medium"
+url = "https://medium.com/@et860525"
+
+[[params.socialIcons]]
 name = "email"
 url = "mailto:et860525@gmail.com"
 
