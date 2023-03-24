@@ -3,7 +3,7 @@ title: "理解 OAuth"
 date: 2023-03-24
 draft: false
 author: "Chen Yu Fan"
-tags: ["TypeScript", "Projects", "Prisma", "Express"]
+tags: ["Backend", "Authentication", "OAuth 2.0"]
 ---
 
 ![OAuth-logo.png](/images/OAuth/OAuth-logo.png)
