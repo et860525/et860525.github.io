@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Mango Blog</title><link>https://et860525.github.io/</link><description>Recent content on Mango Blog</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 25 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://et860525.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>OAuth Grant</title><link>https://et860525.github.io/posts/oauth-grant/</link><pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate><guid>https://et860525.github.io/posts/oauth-grant/</guid><description>OAuth 2.0 最大的優勢是可擴展性與模塊化，但這樣的靈活性也導致於在不同的實現之間，會存在著相容性問題。當開發人員想在不同的系統上實現 OAuth 時，它提供很多的自定義選項容易讓人很困惑。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Mango Blog</title><link>https://et860525.github.io/</link><description>Recent content on Mango Blog</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 11 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://et860525.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Node.js + JWT Authentication 專案(一) - 初始化專案</title><link>https://et860525.github.io/posts/jwt-authentication-init/</link><pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate><guid>https://et860525.github.io/posts/jwt-authentication-init/</guid><description>&lt;p>這個專案會使用 Node.js 和 TypeScript 來建構 REST API 後端，使用 &lt;a href="https://jwt.io/">JWT&lt;/a> 來實作身分認證與授權。&lt;/p>
+&lt;blockquote>
+&lt;p>此專案會遵循我慣用的 OOP 架構 &lt;a href="https://github.com/et860525/express-project-architecture">et860525/express-project-architecture&lt;/a>，有鑑於上一次專案的經驗，由於這些都只是小專案，我不會把所有東西都全部都包在 class 裡面&lt;/p>
+&lt;/blockquote>
+&lt;p>建構此專案會用到的重要套件：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Package&lt;/th>
+&lt;th>Usage&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;a href="https://expressjs.com/">Express&lt;/a>&lt;/td>
+&lt;td>Web 應用框架&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://www.typescriptlang.org/">TypeScript&lt;/a>&lt;/td>
+&lt;td>開發工具&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://mongoosejs.com/">Mongoose&lt;/a>&lt;/td>
+&lt;td>訪問資料庫&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://www.docker.com/">Docker&lt;/a>&lt;/td>
+&lt;td>應用容器化&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://www.mongodb.com/">MongoDB&lt;/a>&lt;/td>
+&lt;td>儲存使用者的資料庫&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://www.npmjs.com/package/redis">Redis&lt;/a>&lt;/td>
+&lt;td>儲存使用者緩存的 session 資料庫&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://github.com/auth0/node-jsonwebtoken">JsonWebToken&lt;/a>&lt;/td>
+&lt;td>產生 JWTs&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://github.com/dcodeIO/bcrypt.js">Bcryptjs&lt;/a>&lt;/td>
+&lt;td>密碼加密&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://github.com/colinhacks/zod">Zod&lt;/a>&lt;/td>
+&lt;td>驗證使用者的輸入&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://typegoose.github.io/typegoose/">Typegoose&lt;/a>&lt;/td>
+&lt;td>使用 TypeScript 優化 Mongoose 模型&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://github.com/motdotla/dotenv">Dotenv&lt;/a>&lt;/td>
+&lt;td>讀取環境變數&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://github.com/expressjs/cors">Cors&lt;/a>&lt;/td>
+&lt;td>允許資料能在前端與後端之間分享&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://lodash.com/">lodash&lt;/a>&lt;/td>
+&lt;td>對 JavaScript 的功能擴充&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://github.com/wclr/ts-node-dev">ts-node-dev&lt;/a>&lt;/td>
+&lt;td>當檔案變更時自動重啟&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>OAuth Grant</title><link>https://et860525.github.io/posts/oauth-grant/</link><pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate><guid>https://et860525.github.io/posts/oauth-grant/</guid><description>OAuth 2.0 最大的優勢是可擴展性與模塊化，但這樣的靈活性也導致於在不同的實現之間，會存在著相容性問題。當開發人員想在不同的系統上實現 OAuth 時，它提供很多的自定義選項容易讓人很困惑。
 OAuth 2.0 一共定義了 7 種授權類型，可以根據不同的情況與環境使用不同的模式：
 Legacy: 密碼模式 ( Password Grant ) Legacy: 隱含模式 ( Implicit Flow ) 授權碼 ( Authorization Code ) 刷新令牌 ( Refresh Token ) 客戶憑證 ( Client Credentials ) PKCE ( Proof Key for Code Exchange ) 設備碼 ( Device Code ) 起初，OAuth 設計是基於 HTTP 的，但實現方法的細節可以有很多種。
 在上一篇有提到，OAuth 裡定義的四種角色。其中的客戶端還可以分為兩種：

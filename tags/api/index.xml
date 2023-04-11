@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>MongoDB on Mango Blog</title><link>https://et860525.github.io/tags/mongodb/</link><description>Recent content in MongoDB on Mango Blog</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 11 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://et860525.github.io/tags/mongodb/index.xml" rel="self" type="application/rss+xml"/><item><title>Node.js + JWT Authentication 專案(一) - 初始化專案</title><link>https://et860525.github.io/posts/jwt-authentication-init/</link><pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate><guid>https://et860525.github.io/posts/jwt-authentication-init/</guid><description>&lt;p>這個專案會使用 Node.js 和 TypeScript 來建構 REST API 後端，使用 &lt;a href="https://jwt.io/">JWT&lt;/a> 來實作身分認證與授權。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>API on Mango Blog</title><link>https://et860525.github.io/tags/api/</link><description>Recent content in API on Mango Blog</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 11 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://et860525.github.io/tags/api/index.xml" rel="self" type="application/rss+xml"/><item><title>Node.js + JWT Authentication 專案(一) - 初始化專案</title><link>https://et860525.github.io/posts/jwt-authentication-init/</link><pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate><guid>https://et860525.github.io/posts/jwt-authentication-init/</guid><description>&lt;p>這個專案會使用 Node.js 和 TypeScript 來建構 REST API 後端，使用 &lt;a href="https://jwt.io/">JWT&lt;/a> 來實作身分認證與授權。&lt;/p>
 &lt;blockquote>
 &lt;p>此專案會遵循我慣用的 OOP 架構 &lt;a href="https://github.com/et860525/express-project-architecture">et860525/express-project-architecture&lt;/a>，有鑑於上一次專案的經驗，由於這些都只是小專案，我不會把所有東西都全部都包在 class 裡面&lt;/p>
 &lt;/blockquote>
@@ -68,27 +68,4 @@
 &lt;td>當檔案變更時自動重啟&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>Docker: 設定 MongoDB</title><link>https://et860525.github.io/posts/docker-mongodb/</link><pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate><guid>https://et860525.github.io/posts/docker-mongodb/</guid><description>&lt;p>使用 Docker 來建置 MongoDB，可以先到 &lt;a href="https://hub.docker.com/_/mongo">docker mongo&lt;/a> 來選擇版本。&lt;/p>
-&lt;p>MongoDB 會有幾種架構：&lt;/p>
-&lt;ol>
-&lt;li>Standalone
-&lt;ul>
-&lt;li>建立難度 &lt;strong>低&lt;/strong>&lt;/li>
-&lt;li>單一 MongoDB 資料庫&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="https://www.mongodb.com/docs/manual/replication/">Replica Set&lt;/a>
-&lt;ul>
-&lt;li>建立難度 &lt;strong>中&lt;/strong>&lt;/li>
-&lt;li>資料會有多個副本提供容錯空間&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="https://www.mongodb.com/docs/manual/sharding/">Sharded Cluster&lt;/a>
-&lt;ul>
-&lt;li>建立難度 &lt;strong>高&lt;/strong>&lt;/li>
-&lt;li>資料放置在不同的 shard，每個 shard 或 config servers 都是 &lt;code>Replica Set&lt;/code>
-&lt;img loading="lazy" src="https://et860525.github.io/images/Docker-mongodb/Docker-sharded-cluster-production-architecture.png" alt="Docker-sharded-cluster-production-architecture.png" />
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;/table></description></item></channel></rss>
