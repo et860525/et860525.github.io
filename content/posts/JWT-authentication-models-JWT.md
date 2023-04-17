@@ -1,6 +1,6 @@
 ---
 title: "Node.js + JWT Authentication 專案(二) - 資料庫 Models 與 JWT"
-date: 2023-04-17
+date: 2023-04-16
 draft: false
 author: "Chen Yu Fan"
 tags: ["Node.js", "TypeScript", "Express", "MongoDB", "Projects", "API"]
