@@ -3,7 +3,7 @@ title: "Arch Linux 終端機 - 安裝(一)"
 date: 2023-05-16
 draft: false
 author: "Chen Yu Fan"
-tags: ["Linux"]
+tags: ["Arch", "Linux"]
 ---
 
 在 Windows 上做開發時，常常會遇到有些套件只能在 Linux 上使用。如今 Windows 推出了 [WSL](https://learn.microsoft.com/zh-tw/windows/wsl/install) 能讓使用者同時使用 Windows 與 Linux。但是如果提到要學習或想完整體驗 Linux，還是建議安裝虛擬機並實際操作。
