@@ -206,6 +206,34 @@ console.log(store.state.count) // 1
 	</script>
 	```
 
+## 簡化 useStore
+
+每次使用 `useStore` 時總是要伴隨著 `Injectionkey` 一起使用，為了避免這個重複性，這裡可以在 `createStore` 時就簡化 `useStore`：
+
+- `store.ts`
+	```ts
+	import { createStore, Store, useStore as baseUseStore } from 'vuex';
+	
+	//...
+	
+	export const key: InjectionKey<Store<modulesState>> = Symbol();
+	
+	export function useStore() {
+	  return baseUseStore(key);
+	}
+	```
+- `Home.vue`：在外部檔案引入的 `useStore` 就不是從 `vuex`，而是我們所設定的
+	```html
+	<script setup lang="ts">
+	//...
+	import { useStore } from '../store';
+	
+	const store = useStore();
+	
+	//...
+	</script>
+	```
+
 ## 結語
 
 如果是自己在使用 Vuex，都會盡量使用 TypeScript 來設定，所以這邊也順便紀錄一下。
