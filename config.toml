@@ -63,7 +63,7 @@ Content = """
   
   My name is Chen Yu Fan🫠. 
   
-      | 💻 Backend Engineer | 📖 Reader | 
+      | 📱 Frontend Engineer | 💻 Backend Engineer | 📖 Reader | 
   """
 
 [[params.socialIcons]]
@@ -71,20 +71,12 @@ name = "github"
 url = "https://github.com/et860525"
 
 [[params.socialIcons]]
-name = "instagram"
-url = "https://www.instagram.com/mango70225/"
-
-[[params.socialIcons]]
-name = "twitter"
-url = "https://twitter.com/Mango9702"
-
-[[params.socialIcons]]
 name = "linkedin"
 url = "https://www.linkedin.com/in/yu-fan-chen-6710b0244"
 
 [[params.socialIcons]]
-name = "medium"
-url = "https://medium.com/@et860525"
+name = "twitter"
+url = "https://twitter.com/Mango9702"
 
 [[params.socialIcons]]
 name = "email"
