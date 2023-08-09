@@ -1,5 +1,5 @@
 ---
-title: "Vuex - Single-File Components 介紹"
+title: "Single-File Components 介紹"
 date: 2023-08-08
 draft: false
 author: "Chen Yu Fan"
