@@ -3,7 +3,7 @@ title: "Pnpm ( Performant Node Package Manager )"
 date: 2023-02-26
 draft: false
 author: "Chen Yu Fan"
-tags: ["Node.js", "tools"]
+tags: ["Node.js", "Tools"]
 ---
 
 [Pnpm](https://pnpm.io/) ( Performant Node Package Manager ) 是一個套件管理器。根據官網表示，可以節省磁碟空間並提升安裝速度。
